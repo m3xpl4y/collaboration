@@ -13,7 +13,7 @@ import java.util.Scanner;
 
 
 
-        public static int playstone() {
+        public static int playstone1() {
 
             int inputstone = 0;
 
