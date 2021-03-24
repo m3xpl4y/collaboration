@@ -11,7 +11,7 @@ import java.util.Scanner;
 //Hallo Dominik
 //hallo schon wieder
 
-        public static int playstone() {
+        public static int playstone2() {
 
             int inputstone = 0;
 
