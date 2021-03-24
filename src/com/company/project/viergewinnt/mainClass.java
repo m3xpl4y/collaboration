@@ -9,11 +9,11 @@ import java.util.Scanner;
 
 // hallo mAXg
 //Hallo Dominik
-//hallo schon wieder
+//hallo schon wieder ....
 
 
 
-        public static int playstone1() {
+        public static int playstone() {
 
             int inputstone = 0;
 
