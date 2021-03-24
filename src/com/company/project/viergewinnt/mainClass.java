@@ -1,19 +1,10 @@
 package com.company.project.viergewinnt;
 
-
 import java.util.Scanner;
 
     public class mainClass {
 
-
-
-// hallo mAXg
-//Hallo Dominik
-//hallo schon wieder ....
-
-
-
-        public static int playstone1(String() args) {
+        public static int playstone() {
 
             int inputstone = 0;
 
@@ -32,13 +23,8 @@ import java.util.Scanner;
 
                     return inputstone;
                 }
-
-
             }
-
             return inputstone;
         }
-
-
     }
 

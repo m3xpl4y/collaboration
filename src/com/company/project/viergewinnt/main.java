@@ -2,7 +2,6 @@ package com.company.project.viergewinnt;
 
 public class main {
 
-
         static int hight = 6;
         static int lenght = 7;
 
@@ -38,23 +37,14 @@ public class main {
                         if (player1 == 'X' && field4IsWin[ly][lx] != '0') {
 
                             field4IsWin[5][6] = 'X';
-
                         }
-
 
                         outputResult(field4IsWin);
 
-
                         isPlayEnd = false;
-
                     }
-
-
                 }
-
             }
-
-
         }
 
         private static void outputResult(char[][] field) {
