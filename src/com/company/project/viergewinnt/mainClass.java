@@ -11,6 +11,11 @@ import java.util.Scanner;
 //Hallo Dominik
 
 
+
+
+        g
+
+
         public static int playstone() {
 
             int inputstone = 0;
