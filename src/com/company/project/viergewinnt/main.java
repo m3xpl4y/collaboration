@@ -1,5 +1,7 @@
 package com.company.project.viergewinnt;
 
+import com.company.dominik.vierGewinnt.vierGewinntClass;
+
 public class main {
 
 
