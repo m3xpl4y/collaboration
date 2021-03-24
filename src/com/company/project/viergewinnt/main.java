@@ -23,7 +23,7 @@ public class main {
                 System.out.println("Bitte geben geben Sie die Spalte ein: 1-7. ");
 
 
-                mainClass.playstone();
+
 
                 System.out.println(mainClass.playstone());
 
