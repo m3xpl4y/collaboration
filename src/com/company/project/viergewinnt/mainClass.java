@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 
 
-
+//Hallo Dominik
 
 
         public static int playstone() {
