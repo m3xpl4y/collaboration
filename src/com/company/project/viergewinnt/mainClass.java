@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 
 
-
+// hallo mAXg
 
 
         public static int playstone() {
