@@ -26,5 +26,6 @@ import java.util.Scanner;
             }
             return inputstone;
         }
+
     }
 

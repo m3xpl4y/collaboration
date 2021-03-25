@@ -11,7 +11,6 @@ public class main {
 
         public static void main(String[] args) {
 
-
             boolean isPlayEnd = true;
 
 
@@ -21,9 +20,6 @@ public class main {
             while (true) {
 
                 System.out.println("Bitte geben geben Sie die Spalte ein: 1-7. ");
-
-
-
 
                 System.out.println(mainClass.playstone());
 
