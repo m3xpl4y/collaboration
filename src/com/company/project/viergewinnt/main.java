@@ -10,7 +10,7 @@ public class main {
 
     static char player1 = 'X';
     static char player2 = '0';
-    static byte player = 0;
+    static char player = 'X';
 
 
     public static void main(String[] args) {
@@ -18,7 +18,7 @@ public class main {
 
         boolean isPlayEnd = true;
 
-        mainClass.fielAllRows();
+        mainClass.fielAllRowsWithSpace();
 
 
         while (isPlayEnd) {
@@ -30,14 +30,23 @@ public class main {
 
             //Gibt das 4 Gewinnt GUI aus.
 
+
+
+            mainClass.anyCollumISFull();
+
+
+
+            main.outputResult(mainClass.fillRows(player));
+            mainClass.findTheWinner();
             mainClass.changPlayer(player);
+
 
 
         }
 
 
     }
-
+        //output for startGUi and output after every new input of a playstone.
 
     public static void outputResult(char[][] field) {
         for (int i = hight - 1; i >= 0; i--) {
