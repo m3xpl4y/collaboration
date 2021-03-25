@@ -1,12 +1,13 @@
 package com.company.project.viergewinnt;
 
-import com.company.dominik.vierGewinnt.vierGewinntClass;
+import com.company.project.viergewinnt.mainClass;
 
 public class main {
 
-
         static int hight = 6;
         static int lenght = 7;
+        static char[][] field4IsWin = new char[hight][lenght];
+
 
         static char player1 = 'X';
         static char player2 = '0';
@@ -18,52 +19,36 @@ public class main {
             boolean isPlayEnd = true;
 
 
-            char[][] field4IsWin = new char[hight][lenght];
 
 
-            while (true) {
+
+
+            while (isPlayEnd) {
 
                 System.out.println("Bitte geben geben Sie die Spalte ein: 1-7. ");
 
 
-                mainClass.playstone();
+                //System.out.println(mainClass.playstone());
 
-                System.out.println(mainClass.playstone());
-
-
-                for (int ly = 5; ly < 0; ly--) {
+                //Gibt das 4 Gewinnt GUI aus.
+                outputResult(mainClass.fillRows(player1));
 
 
-                    for (int lx = 6; lx < 0; lx--) {
 
 
-                        if (player1 == 'X' && field4IsWin[ly][lx] != '0') {
-
-                            field4IsWin[5][6] = 'X';
-
-                        }
-
-
-                        outputResult(field4IsWin);
-
-
-                        isPlayEnd = false;
-
-                    }
-
-
-                }
 
             }
+
+
 
 
         }
 
         private static void outputResult(char[][] field) {
-            for (int i = 0; i < hight; i++) {
+            for (int i = hight-1; i >= 0; i--) {
                 System.out.print("|");
 
-                for (int j = 0; j < lenght; j++) {
+                for (int j = 0; j <= lenght-1; j++) {
                     System.out.print(field[i][j]);
                     System.out.print("|");
 
