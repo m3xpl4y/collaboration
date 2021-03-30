@@ -142,19 +142,16 @@ public class mainClass {
     public static void findTheWinner() {
 
 
-
         horizontal();
         vertical();
         diagonally();
-
-
-
 
 
     }
 
 
     public static void horizontal() {
+
 
         for (int j = 0; j < main.lenght; j++) {
 
@@ -174,7 +171,6 @@ public class mainClass {
         solution = "";
 
 
-
     }
 
     public static void vertical() {
@@ -183,7 +179,7 @@ public class mainClass {
         for (int j = 0; j < main.hight; j++) {
 
 
-            for (int i= 0; i < main.lenght; i++) {
+            for (int i = 0; i < main.lenght; i++) {
 
                 solution = solution + main.field4IsWin[j][i];
 
@@ -196,7 +192,6 @@ public class mainClass {
 
         }
         solution = "";
-
 
 
     }
@@ -204,23 +199,28 @@ public class mainClass {
     public static void diagonally() {
 
 
-        for (int j = 0; j < main.hight; j++) {
-
-
-            for (int i= 0; i < main.lenght; i++) {
-
-                solution = solution + main.field4IsWin[j][i];
-
+        for(int i = 0; i < 3; i++) {
+            for (int j = 6; j > 2; j--) {
+                if (main.field4IsWin[i][j] == 'X' && main.field4IsWin[i + 1][j - 1] == 'X' && main.field4IsWin[i + 2][j - 2] == 'X' && main.field4IsWin[i + 3][j - 3] == 'X') {
+                    System.out.println("Rechts nach links sind schräg 4 XXXX");
+                }
+                if (main.field4IsWin[i][j] == '0' && main.field4IsWin[i + 1][j - 1] == '0' && main.field4IsWin[i + 2][j - 2] == '0' && main.field4IsWin[i + 3][j - 3] == '0') {
+                    System.out.println("Rechts nach Links sind schräg 4 0000");
+                }
             }
-            if (solution.indexOf("XXXX") != -1 ? true : false || solution.indexOf("0000") != -1 ? true : false) {
-                System.out.printf("Es wurden 4x %c in der Reihe: %d eingegeben\n", main.player, (j + 1));
-                winning = true;
-                break;
-            }
-
         }
-        solution = "";
 
+
+        for(int i = 0; i < 6; i++){
+            for(int j = 0; j < 6 ; j++){
+                if (main.field4IsWin[i][j] == 'X' && main.field4IsWin[i + 1][j + 1] == 'X' && main.field4IsWin[i + 2][j + 2] == 'X' && main.field4IsWin[i + 3][j + 3] == 'X') {
+                    System.out.println("es sind schräg 4 XXXX");
+                }
+                if (main.field4IsWin[i][j] == '0' && main.field4IsWin[i + 1][j + 1] == '0' && main.field4IsWin[i + 2][j + 2] == '0' && main.field4IsWin[i + 3][j + 3] == '0') {
+                    System.out.println("es sind schräg 4 0000");
+                }
+            }
+        }
 
 
     }

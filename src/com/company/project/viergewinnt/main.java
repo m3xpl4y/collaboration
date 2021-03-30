@@ -21,6 +21,7 @@ public class main {
         mainClass.fielAllRowsWithSpace();
 
 
+
         while (isPlayEnd) {
 
             System.out.println("Bitte geben geben Sie die Spalte ein: 1-7. ");
@@ -49,6 +50,7 @@ public class main {
         //output for startGUi and output after every new input of a playstone.
 
     public static void outputResult(char[][] field) {
+        System.out.println("|1|2|3|4|5|6|7|");
         for (int i = hight - 1; i >= 0; i--) {
             System.out.print("|");
 
